@@ -26,7 +26,9 @@ def get_ansIdlist(paperDict, ansList):
             i = i + 1
     return ansIdList
 
-getque = getQue('10359#2015212182', '2015212182')
+Id = input("请输入账号:\n")
+Pwd = input("请输入密码:\n")
+getque = getQue(Id, Pwd)
 
 getque.set_headers1()
 if getque.login():
